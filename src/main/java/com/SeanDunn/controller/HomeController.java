@@ -20,9 +20,10 @@ public class HomeController {
     @RequestMapping("/submission")
 
     public ModelAndView Submission( @RequestParam("firstname") String firstname,
-                                    @RequestParam("lastname") String lastname){
+                                    @RequestParam("lastname") String lastname,
+                                    @RequestParam("address1") String address1){
 
-        User user = new User(firstname, lastname);
+        User user = new User(firstname, lastname, address1);
         return new ModelAndView("submission", "user", user);
     }
 

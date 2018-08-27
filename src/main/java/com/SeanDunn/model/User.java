@@ -6,6 +6,15 @@ package com.SeanDunn.model;
 public class User {
     private String firstName;
     private String lastName;
+    private String address1;
+
+    public String getAddress1() {
+        return address1;
+    }
+
+    public void setAddress1(String address1) {
+        this.address1 = address1;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -24,8 +33,9 @@ public class User {
     }
 
 
-    public User(String firstName, String lastName) {
+    public User(String firstName, String lastName, String address1) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.address1 = address1;
     }
 }

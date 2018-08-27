@@ -11,8 +11,13 @@
     <title>Submission</title>
 </head>
 <body>
-Hello ${user.getFirstName()}
-${user.getLastName()}
+Thank you for you submission. We have logged the following
+
+<b>First Name: </b> ${user.getFirstName()} <br>
+<b>Last Name: </b> ${user.getLastName()} <br>
+<b>Address 1: </b> ${user.getAddress1()} <br>
+
+
 <p>Thank you for submitting!</p>
 </body>
 </html>
