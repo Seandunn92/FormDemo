@@ -11,7 +11,8 @@
     <title>Submission</title>
 </head>
 <body>
-Hello ${firstname};
+Hello ${user.getFirstName()}
+${user.getLastName()}
 <p>Thank you for submitting!</p>
 </body>
 </html>

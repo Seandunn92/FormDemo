@@ -1,5 +1,6 @@
 package com.SeanDunn.controller;
 
+import com.SeanDunn.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,8 +19,11 @@ public class HomeController {
     }
     @RequestMapping("/submission")
 
-    public ModelAndView Submission( @RequestParam("firstname") String firstname){
-        return new ModelAndView("submission", "firstname", firstname);
+    public ModelAndView Submission( @RequestParam("firstname") String firstname,
+                                    @RequestParam("lastname") String lastname){
+
+        User user = new User(firstname, lastname);
+        return new ModelAndView("submission", "user", user);
     }
 
 }
