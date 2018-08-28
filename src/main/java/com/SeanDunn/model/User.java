@@ -20,16 +20,18 @@ public class User {
     private String address1;
     private String address2;
     private String city;
+    private String state;
 
 
 
-    public User(String email, String firstName, String lastName, String address1, String address2, String city) {
+    public User(String email, String firstName, String lastName, String address1, String address2, String city, String state) {
         this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
         this.address1 = address1;
         this.address2 = address2;
         this.city = city;
+        this.state = state;
     }
     public User() {
         email = "";
@@ -38,6 +40,7 @@ public class User {
         address1 = "";
         address2 = "";
         city = "";
+        state = "";
     }
 
 
@@ -81,6 +84,12 @@ public class User {
     public void setCity(String city) {
         this.city = city;
     }
+    public String getState() {
+        return state;
+    }
+    public void setState(String state) {
+        state = state;
+    }
 
 
 
@@ -92,6 +101,8 @@ public class User {
                 ", lastName='" + lastName + '\'' +
                 ", address1='" + address1 + '\'' +
                 ", address2='" + address2 + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
                 '}';
     }
 

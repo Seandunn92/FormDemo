@@ -30,6 +30,7 @@ ${message} <br>
     Address 1 : <input type = "text" name = "address1" > <br>
     Address 2 : <input type = "text" name = "address2" > <br>
     City      : <input type = "text" name = "city" > <br>
+    State     : <input type = "text" name = "state" > <br>
     <input type ="submit" value = "Submit">
 
 
