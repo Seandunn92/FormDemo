@@ -15,6 +15,7 @@ import java.util.Date;
 
 public class User {
 
+    //email is the primary key for User
     private String email;
     private String firstName;
     private String lastName;

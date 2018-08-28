@@ -20,6 +20,7 @@ public class HomeController {
 
     public static ArrayList<User> userList = new ArrayList();
 
+    public static ArrayList<String> emailList = new ArrayList();
 
 
     @RequestMapping("/")
@@ -46,6 +47,12 @@ public class HomeController {
                         @RequestParam("country") String country)
     {
         Date regDate= new Date();
+
+        if(emailList.contains(email)){
+            return new ModelAndView("homepage", "message", "Sorry that email was " +
+                    "already registered");
+        }
+        emailList.add(email);
         User user = new User(email, firstname, lastname, address1, address2, city, state, zipCode, country, regDate);
         userList.add(user);
 
