@@ -22,12 +22,13 @@ public class User {
     private String city;
     private String state;
     private int zipCode;
+    private String country;
 
 
 
 
 
-    public User(String email, String firstName, String lastName, String address1, String address2, String city, String state, int zipCode) {
+    public User(String email, String firstName, String lastName, String address1, String address2, String city, String state, int zipCode, String country) {
         this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -36,6 +37,7 @@ public class User {
         this.city = city;
         this.state = state;
         this.zipCode=zipCode;
+        this.country=country;
     }
     public User() {
         email = "";
@@ -45,7 +47,8 @@ public class User {
         address2 = "";
         city = "";
         state = "";
-        zipCode= -1;
+        zipCode= 00000;
+        country="";
     }
 
 
@@ -101,7 +104,13 @@ public class User {
     public void setZipCode(int zipCode) {
         this.zipCode = zipCode;
     }
+    public String getCountry() {
+        return country;
+    }
 
+    public void setCountry(String country) {
+        this.country = country;
+    }
 
 
     @Override

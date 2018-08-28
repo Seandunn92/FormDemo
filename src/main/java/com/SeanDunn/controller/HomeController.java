@@ -40,9 +40,10 @@ public class HomeController {
                         @RequestParam("address2") String address2,
                         @RequestParam("city") String city,
                         @RequestParam("state") String state,
-                        @RequestParam(value = "zipcode",  defaultValue = "00000") int zipCode)
+                        @RequestParam(value = "zipcode",  defaultValue = "00000") int zipCode,
+                        @RequestParam("country") String country)
     {
-        User user = new User(email, firstname, lastname, address1, address2, city, state, zipCode);
+        User user = new User(email, firstname, lastname, address1, address2, city, state, zipCode, country);
         userList.add(user);
 
         //userList.get(etc) returns the last user registered
