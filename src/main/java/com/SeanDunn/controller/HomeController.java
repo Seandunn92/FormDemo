@@ -33,20 +33,21 @@ public class HomeController {
 
     @RequestMapping("/submission")
     public ModelAndView Submission(
-            @RequestParam("email") String email,
-             @RequestParam("firstname") String firstname,
-                                    @RequestParam("lastname") String lastname,
-                                    @RequestParam("address1") String address1,
-                                    @RequestParam("address2") String address2){
-
-        User user = new User(email, firstname, lastname, address1, address2);
+                        @RequestParam("email") String email,
+                        @RequestParam("firstname") String firstname,
+                        @RequestParam("lastname") String lastname,
+                        @RequestParam("address1") String address1,
+                        @RequestParam("address2") String address2,
+                        @RequestParam("city") String city)
+    {
+        User user = new User(email, firstname, lastname, address1, address2, city);
         userList.add(user);
 
         //userList.get(etc) returns the last user registered
         return new ModelAndView("submission", "user", userList.get(userList.size()-1));
     }
-    @RequestMapping("/userOverview")
 
+    @RequestMapping("/userOverview")
     public ModelAndView userOverview()
           {
 

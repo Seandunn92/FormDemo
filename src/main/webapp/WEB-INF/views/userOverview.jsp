@@ -10,7 +10,7 @@
 
 <html>
 <head>
-    <title>user Overview</title>
+    <title>User Overview</title>
     <link href="../resources/styles.css" rel="stylesheet">
 </head>
 <body>
@@ -33,6 +33,7 @@
         <td><b>Last Name</b></td>
         <td><b>Address 1</b></td>
         <td><b>Address 2</b></td>
+        <td><b>City</b></td>
 
     </tr>
     <c:forEach var="singleUser" items="${userList}">
@@ -42,6 +43,7 @@
             <td>${singleUser.lastName}</td>
             <td>${singleUser.address1}</td>
             <td>${singleUser.address2}</td>
+            <td>${singleUser.city}</td>
 
         </tr>
     </c:forEach>

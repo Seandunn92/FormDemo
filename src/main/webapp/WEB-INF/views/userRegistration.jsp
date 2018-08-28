@@ -26,9 +26,10 @@ ${message} <br>
 <form action="/submission">
     Email: <input type = "text" name ="email" > <br>
     First name: <input type = "text" name ="firstname" > <br>
-    Last name: <input type = "text" name ="lastname" > <br>
-    Address 1: <input type = "text" name = "address1" > <br>
-    Address 2: <input type = "text" name = "address2" > <br>
+    Last name : <input type = "text" name ="lastname" > <br>
+    Address 1 : <input type = "text" name = "address1" > <br>
+    Address 2 : <input type = "text" name = "address2" > <br>
+    City      : <input type = "text" name = "city" > <br>
     <input type ="submit" value = "Submit">
 
 

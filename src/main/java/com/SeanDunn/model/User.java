@@ -14,30 +14,30 @@ import javax.persistence.Table;
 
 public class User {
 
-
-
-
-
     private String email;
     private String firstName;
     private String lastName;
     private String address1;
     private String address2;
+    private String city;
 
 
-    public User(String email, String firstName, String lastName, String address1, String address2) {
+
+    public User(String email, String firstName, String lastName, String address1, String address2, String city) {
         this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
         this.address1 = address1;
         this.address2 = address2;
+        this.city = city;
     }
     public User() {
-        this.email = "";
-        this.firstName = "";
-        this.lastName = "";
-        this.address1 = "";
-        this.address2 = "";
+        email = "";
+        firstName = "";
+        lastName = "";
+        address1 = "";
+        address2 = "";
+        city = "";
     }
 
 
@@ -74,6 +74,13 @@ public class User {
         this.address2 = address2;
     }
 
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
 
 
 
