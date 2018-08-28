@@ -29,6 +29,7 @@ Thank you for you submission. We have logged the following <br>
 <b>First Name: </b> ${user.firstName} <br>
 <b>Last Name: </b> ${user.lastName} <br>
 <b>Address 1: </b> ${user.address1} <br>
+<b>Address 2: </b> ${user.address2} <br>
 
 
 <p>Thank you for submitting!</p>

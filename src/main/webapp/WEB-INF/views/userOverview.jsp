@@ -31,7 +31,8 @@
         <td> <b>Email</b></td>
         <td><b>First Name</b></td>
         <td><b>Last Name</b></td>
-        <td><b>Address</b></td>
+        <td><b>Address 1</b></td>
+        <td><b>Address 2</b></td>
 
     </tr>
     <c:forEach var="singleUser" items="${userList}">
@@ -40,6 +41,7 @@
             <td>${singleUser.firstName}</td>
             <td>${singleUser.lastName}</td>
             <td>${singleUser.address1}</td>
+            <td>${singleUser.address2}</td>
 
         </tr>
     </c:forEach>

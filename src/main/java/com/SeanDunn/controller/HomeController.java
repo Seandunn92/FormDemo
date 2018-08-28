@@ -36,9 +36,10 @@ public class HomeController {
             @RequestParam("email") String email,
              @RequestParam("firstname") String firstname,
                                     @RequestParam("lastname") String lastname,
-                                    @RequestParam("address1") String address1){
+                                    @RequestParam("address1") String address1,
+                                    @RequestParam("address2") String address2){
 
-        User user = new User(email, firstname, lastname, address1);
+        User user = new User(email, firstname, lastname, address1, address2);
         userList.add(user);
 
         //userList.get(etc) returns the last user registered
