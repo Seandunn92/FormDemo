@@ -7,10 +7,28 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
+
+<style>
+
+</style>
+
 <head>
     <title>Welcome Page</title>
+
+    <link href="../resources/styles.css" rel="stylesheet">
 </head>
 <body>
+
+
+<%--https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black_active--%>
+        <ul class="nav navbar-nav navbar-right">
+                <li><a id="goHome" href="/">Home Page</a></li>
+                <li><a id="registerUser" href="/userRegistration">Register a User</a></li>
+                <li><a id="userOverview" href="/userOverview">User Overview</a></li>
+                <li></li>
+        </ul>
+
+
 
 ${message}
 

@@ -22,7 +22,7 @@ public class HomeController {
 
     @RequestMapping("/")
     public ModelAndView welcomePage(){
-        return new ModelAndView("welcome", "message", "Welcome to Form Demo");
+        return new ModelAndView("homepage", "message", "Welcome to Form Demo");
 
     }
 
@@ -30,8 +30,8 @@ public class HomeController {
     public ModelAndView helloWorld(){
         return new ModelAndView("userRegistration", "message", "Welcome to the registration form");
     }
-    @RequestMapping("/submission")
 
+    @RequestMapping("/submission")
     public ModelAndView Submission(
             @RequestParam("email") String email,
              @RequestParam("firstname") String firstname,

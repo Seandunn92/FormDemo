@@ -10,8 +10,18 @@
 <html>
 <head>
     <title>Submission</title>
+    <link href="../resources/styles.css" rel="stylesheet">
 </head>
 <body>
+
+
+<ul class="nav navbar-nav navbar-right">
+    <li><a id="goHome" href="/">Home Page</a></li>
+    <li><a id="registerUser" href="/userRegistration">Register a User</a></li>
+    <li><a id="userOverview" href="/userOverview">User Overview</a></li>
+    <li></li>
+</ul>
+
 Thank you for you submission. We have logged the following <br>
 
 
