@@ -32,6 +32,7 @@ Thank you for you submission. We have logged the following <br>
 <b>Address 2: </b> ${user.address2} <br>
 <b>City     : </b> ${user.city} <br>
 <b>State     : </b> ${user.state} <br>
+<b>Zip Code  : </b> ${user.zipCode} <br>
 
 
 <p>Thank you for submitting!</p>

@@ -35,6 +35,7 @@
         <td><b>Address 2</b></td>
         <td><b>City</b></td>
         <td><b>State</b></td>
+        <td><b>Zip Code</b></td>
 
     </tr>
     <c:forEach var="singleUser" items="${userList}">
@@ -46,6 +47,7 @@
             <td>${singleUser.address2}</td>
             <td>${singleUser.city}</td>
             <td>${singleUser.state}</td>
+            <td>${singleUser.zipCode}</td>
 
         </tr>
     </c:forEach>

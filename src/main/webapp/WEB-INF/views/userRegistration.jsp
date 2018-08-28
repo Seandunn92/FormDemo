@@ -31,6 +31,7 @@ ${message} <br>
     Address 2 : <input type = "text" name = "address2" > <br>
     City      : <input type = "text" name = "city" > <br>
     State     : <input type = "text" name = "state" > <br>
+    Zip Code     : <input type = "text" name = "zipcode" > <br>
     <input type ="submit" value = "Submit">
 
 

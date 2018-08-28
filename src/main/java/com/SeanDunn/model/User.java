@@ -21,10 +21,13 @@ public class User {
     private String address2;
     private String city;
     private String state;
+    private int zipCode;
 
 
 
-    public User(String email, String firstName, String lastName, String address1, String address2, String city, String state) {
+
+
+    public User(String email, String firstName, String lastName, String address1, String address2, String city, String state, int zipCode) {
         this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -32,6 +35,7 @@ public class User {
         this.address2 = address2;
         this.city = city;
         this.state = state;
+        this.zipCode=zipCode;
     }
     public User() {
         email = "";
@@ -41,6 +45,7 @@ public class User {
         address2 = "";
         city = "";
         state = "";
+        zipCode= -1;
     }
 
 
@@ -89,6 +94,12 @@ public class User {
     }
     public void setState(String state) {
         state = state;
+    }
+    public int getZipCode() {
+        return zipCode;
+    }
+    public void setZipCode(int zipCode) {
+        this.zipCode = zipCode;
     }
 
 
