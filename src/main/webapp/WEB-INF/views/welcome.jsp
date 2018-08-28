@@ -12,7 +12,10 @@
 </head>
 <body>
 
+${message} <br>
+
 <form action="/submission">
+    Email: <input type = "text" name ="email" > <br>
     First name: <input type = "text" name ="firstname" > <br>
     Last name: <input type = "text" name ="lastname" > <br>
     Address 1: <input type = "text" name = "address1" > <br>
