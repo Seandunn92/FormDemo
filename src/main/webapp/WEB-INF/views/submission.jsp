@@ -25,15 +25,16 @@
 Thank you for you submission. We have logged the following <br>
 
 
-<b>User Email: </b> ${user.email} <br>
-<b>First Name: </b> ${user.firstName} <br>
-<b>Last Name: </b> ${user.lastName} <br>
-<b>Address 1: </b> ${user.address1} <br>
-<b>Address 2: </b> ${user.address2} <br>
-<b>City     : </b> ${user.city} <br>
-<b>State     : </b> ${user.state} <br>
-<b>Zip Code  : </b> ${user.zipCode} <br>
-<b>Country  : </b> ${user.country} <br>
+<b>User Email         : </b> ${user.email} <br>
+<b>First Name         : </b> ${user.firstName} <br>
+<b>Last Name          : </b> ${user.lastName} <br>
+<b>Address 1          : </b> ${user.address1} <br>
+<b>Address 2          : </b> ${user.address2} <br>
+<b>City               : </b> ${user.city} <br>
+<b>State              : </b> ${user.state} <br>
+<b>Zip Code           : </b> ${user.zipCode} <br>
+<b>Country            : </b> ${user.country} <br>
+<b>Registration Date  : </b> ${user.regDate} <br>
 
 
 <p>Thank you for submitting!</p>

@@ -5,6 +5,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Date;
 
 /**
  * Created by seandunn92 on 8/26/18.
@@ -23,12 +24,14 @@ public class User {
     private String state;
     private int zipCode;
     private String country;
+    private Date regDate;
 
 
 
 
 
-    public User(String email, String firstName, String lastName, String address1, String address2, String city, String state, int zipCode, String country) {
+    public User(String email, String firstName, String lastName, String address1, String address2, String city,
+                String state, int zipCode, String country, Date regDate) {
         this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -38,6 +41,7 @@ public class User {
         this.state = state;
         this.zipCode=zipCode;
         this.country=country;
+        this.regDate=regDate;
     }
     public User() {
         email = "";
@@ -112,6 +116,14 @@ public class User {
         this.country = country;
     }
 
+    public Date getRegDate() {
+        return regDate;
+    }
+
+    public void setRegDate(Date regDate) {
+        this.regDate = regDate;
+    }
+
 
     @Override
     public String toString() {
@@ -125,5 +137,7 @@ public class User {
                 ", state='" + state + '\'' +
                 '}';
     }
+
+
 
 }

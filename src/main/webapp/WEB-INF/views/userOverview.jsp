@@ -37,6 +37,7 @@
         <td><b>State</b></td>
         <td><b>Zip Code</b></td>
         <td><b>Country </b></td>
+        <td><b> Registration Date </b></td>
 
     </tr>
     <c:forEach var="singleUser" items="${userList}">
@@ -50,6 +51,7 @@
             <td>${singleUser.state}</td>
             <td>${singleUser.zipCode}</td>
             <td>${singleUser.country}</td>
+            <td>${singleUser.regDate}</td>
 
         </tr>
     </c:forEach>

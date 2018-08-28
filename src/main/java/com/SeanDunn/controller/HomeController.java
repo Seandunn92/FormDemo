@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 
 /**
@@ -18,6 +19,7 @@ import java.util.ArrayList;
 public class HomeController {
 
     public static ArrayList<User> userList = new ArrayList();
+
 
 
     @RequestMapping("/")
@@ -43,7 +45,8 @@ public class HomeController {
                         @RequestParam(value = "zipcode",  defaultValue = "00000") int zipCode,
                         @RequestParam("country") String country)
     {
-        User user = new User(email, firstname, lastname, address1, address2, city, state, zipCode, country);
+        Date regDate= new Date();
+        User user = new User(email, firstname, lastname, address1, address2, city, state, zipCode, country, regDate);
         userList.add(user);
 
         //userList.get(etc) returns the last user registered
