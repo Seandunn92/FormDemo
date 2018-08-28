@@ -1,17 +1,11 @@
 package com.SeanDunn.controller;
 
 import com.SeanDunn.model.User;
-import com.SeanDunn.fileHandlers.jsonHandler;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.io.IOException;
 import java.util.ArrayList;
 
 
@@ -24,9 +18,17 @@ import java.util.ArrayList;
 public class HomeController {
 
     public static ArrayList<User> userList = new ArrayList();
+
+
     @RequestMapping("/")
+    public ModelAndView welcomePage(){
+        return new ModelAndView("welcome", "message", "Welcome to Form Demo");
+
+    }
+
+    @RequestMapping("/userRegistration")
     public ModelAndView helloWorld(){
-        return new ModelAndView("welcome", "message", "Welcome to the registration form");
+        return new ModelAndView("userRegistration", "message", "Welcome to the registration form");
     }
     @RequestMapping("/submission")
 
